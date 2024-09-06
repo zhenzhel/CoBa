@@ -14,7 +14,7 @@ Example pickle files can be found in `example_pkls.zip` under GitHub *Releases*.
 
 ## ROUGE, BertScore and Bleurt Score
 
-**Main Eval Script**: These three metrics can be evaluated using `eval-base.py`. 
+**Main Eval Script**: These three metrics can be evaluated using `eval-base.py`. The Bleurt code is cloned from the [official Bleurt repo](https://github.com/google-research/bleurt).
 
 **Environment**: The corresponding environment can be built from `eval_base_requirements.txt`.
 
@@ -25,7 +25,7 @@ Example pickle files can be found in `example_pkls.zip` under GitHub *Releases*.
 python eval-base.py --file_name [file_name] --output_dir [output_dir] --bleurt_path [bleurt_path]
 ```
 
-We use the `BLEURT-20` checkpoint, which can also be found in the official repo. `--bleurt_path` should look like `/some/path/BLEURT-20`.
+We use the `BLEURT-20` checkpoint, which can also be found in the [official repo](https://github.com/google-research/bleurt). `--bleurt_path` should look like `/some/path/BLEURT-20`.
 
 **Output Format**: Outputs will be saved to `[file_name]_base_metrics.pkl`. It is a dictionary with structure 
 
